@@ -19,6 +19,17 @@ const connect = function() {
     conn.write("Name: ROS");
   });
 
+  conn.on("connect", () => {
+    console.log("Moved Up");
+    conn.write("Move: up");
+  });
+
+  conn.on("connect", () => {
+    console.log("Moved Up - Again");
+    conn.write("Move: up");
+  });
+
+
   return conn;
 };
 
