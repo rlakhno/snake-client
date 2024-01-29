@@ -6,6 +6,15 @@ const setupInput = function(connection) {
       // This unicode represents Ctrl+C, which is commonly used to exit applications.
       process.exit();
     }
+    if (key === 'h') {
+      connection.write("Say: Hi.");
+    }
+    if (key === 'b') {
+      connection.write("Say: Bye");
+    }
+    if (key === 'o') {
+      connection.write("Say: OK");
+    }
     if (key === 'w') {
       connection.write("Move: up");
     }
