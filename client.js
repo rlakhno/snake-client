@@ -1,8 +1,8 @@
 
 const net = require("net");
-let connection;
 // establishes a connection with the game server
 const connect = function() {
+  console.log("Something to see !!!");
   const conn = net.createConnection({
     host: "172.19.179.140",
     port: 50541
@@ -30,31 +30,11 @@ const connect = function() {
     conn.write("Move: up");
   });
 
-  connection = conn;
   return conn;
 };
 
-const handleUserInput = function(key) {
-  // Logic to handle various key presses
-  if (key === '\u0003') {
-    // This unicode represents Ctrl+C, which is commonly used to exit applications.
-    process.exit();
-  }
-  if (key === 'w') {
-    connection.write("Move: up");
-  }
-  if (key === 'a') {
-    connection.write("Move: left");
-  }
-  if (key === 's') {
-    connection.write("Move: down");
-  }
-  if (key === 'd') {
-    connection.write("Move: right");
-  }
+module.exports = {
+  connect
 };
 
-module.exports = {
-  connect,
-  handleUserInput
-};
+
