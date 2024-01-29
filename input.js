@@ -1,4 +1,5 @@
 // input.js
+const {HI, BYE, OK, UP, LEFT, DOWN, RIGHT} = require('./constants');
 const setupInput = function(connection) {
   const handleUserInput = function(key) {
     // Logic to handle various key presses
@@ -7,25 +8,25 @@ const setupInput = function(connection) {
       process.exit();
     }
     if (key === 'h') {
-      connection.write("Say: Hi.");
+      connection.write(HI);
     }
     if (key === 'b') {
-      connection.write("Say: Bye");
+      connection.write(BYE);
     }
     if (key === 'o') {
-      connection.write("Say: OK");
+      connection.write(OK);
     }
     if (key === 'w') {
-      connection.write("Move: up");
+      connection.write(UP);
     }
     if (key === 'a') {
-      connection.write("Move: left");
+      connection.write(LEFT);
     }
     if (key === 's') {
-      connection.write("Move: down");
+      connection.write(DOWN);
     }
     if (key === 'd') {
-      connection.write("Move: right");
+      connection.write(RIGHT);
     }
   };
   // ==>> Implementation of setupInput function
