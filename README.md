@@ -20,7 +20,7 @@ Download client: https://github.com/rlakhno/snake-client/edit/master
 - Use the w, a, s, and d keys to be the up, left, down, right movement keys and let them send messages to the server for the respective movements.
 - The concept of the game is where a player trying to eat food items (represented as quare shape) by colliding with them using the snake's head. As the snake consumes each object, it grows longer, making navigation increasingly challenging.
 
-#### Real lpay looks live that: 
+#### Real play looks live that: 
 
 <img width="655" alt="image" src="https://github.com/rlakhno/snake-client/assets/116111453/47685ffe-94f0-414f-8987-30bfa5cbc5f6">
 
