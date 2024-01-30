@@ -1,5 +1,6 @@
 // constants.js
-const IP = "172.19.179.140";
+// const IP = "172.19.179.140";
+const IP = "localhost";
 const PORT = 50541;
 const HI = "Say: Hi.";
 const BYE = "Say: Bye";
